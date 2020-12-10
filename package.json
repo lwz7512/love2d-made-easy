@@ -77,7 +77,7 @@
 		],
 		"configuration": [
       {
-        "title": "Shortcut Menu Bar configuration",
+        "title": "Love2d Made Easy",
         "properties": {
           "Save active file": {
             "type": "boolean",
@@ -204,10 +204,10 @@
             "default": false,
             "description": "show icon for 'Start debugging'"
           },
-          "Love2d": {
+          "Love2d Run": {
             "type": "boolean",
             "default": true,
-            "description": "show icon for 'Love2d'"
+            "description": "show icon for 'Love2d Run'"
           }
         }
       }
@@ -440,7 +440,7 @@
       },
       {
         "command": "love2d-made-easy.love2d",
-        "title": "Love2d",
+        "title": "Love2d Run",
         "category": "menubar",
         "icon": {
           "light": "images/love2d.png",
@@ -584,7 +584,7 @@
           "group": "navigation@25"
         },
         {
-          "when": "config.Love2d",
+          "when": "config.Love2d Run",
           "command": "love2d-made-easy.love2d",
           "group": "navigation@26"
         }

@@ -1,43 +1,50 @@
-# love2d-made-easy README
+# love2d-made-easy
 
-This is the README for your extension "love2d-made-easy". After writing up a brief description, we recommend including the following sections.
+To simplify the Love2d game development steps and tools involved for beginners, `Love2d Made Easy` (abbr. LoveME) adds launch game button to the top menubar based on [Shortcut Menu Bar](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar). Meanwhile, love2d code [autocomplete](https://marketplace.visualstudio.com/items?itemName=bschulte.love) is also included in this plugin for the convienence of love code input. Last but not the least, couples of code generators and boilerplates offered in love commands to help getting started quickly.
+
+----
+
+## Screenshots & Demos
+
+- Click `Love2d Run` to start love2d game(main.lua required in project root folder)
+![love2d button](./screenshots/love2dbtn.png)
+
+- 
+
+...
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- [x] Launch button
+- [x] Love API autocompelte
+- [x] main.lua generator -- TODO: ...
+- [ ] Interactive project generator
+- [ ] Sprite/GameObject/Entity/State generator
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- main.lua file required to run love2d game
+- [love2d executable program](https://love2d.org/)
+- [lua-language-server plugin](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+From menu: 
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+- on Mac, Code/Preferences/Settings/User/Extensions/Love2d Made Easy, check/uncheck to enable/disables the buttons show up on the right top of vscode.
+- on Windows, ...
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+If any problems, please submit issues on [here](https://github.com/lwz7512/love2d-made-easy/issues)
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Each of release list below and features included.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of Love2d Made Easy(LoveME)
 
 ### 1.0.1
 
@@ -47,19 +54,5 @@ Fixed issue #.
 
 Added features X, Y, and Z.
 
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
