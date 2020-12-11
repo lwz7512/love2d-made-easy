@@ -5,7 +5,7 @@
 import { window, commands, } from "vscode";
 
 const disposableSwitch = (hasCpp:boolean) => {
-  return commands.registerCommand("extension.switch", () => {
+  return commands.registerCommand("loveme.switch", () => {
     if (hasCpp) {
       commands.executeCommand("C_Cpp.SwitchHeaderSource").then(function () {});
     } else {

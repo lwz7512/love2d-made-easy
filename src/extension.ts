@@ -6,9 +6,11 @@
 import { ExtensionContext,  } from "vscode";
 import {
   checkCpp, addBuiltinCmds, addCustomizeCmds,
-  addAutoCompleteSignatureCmds, addAutoCompleteCompletionCmds, addAutoCompleteLaunchCmd,
 } from "./common/CmdHandler"
 
+import {
+  addAutoCompleteSignatureCmds, addAutoCompleteCompletionCmds, addAutoCompleteLaunchCmd,
+} from "./cmds/AutoCmpl"
 
 
 // this method is called when your extension is activated

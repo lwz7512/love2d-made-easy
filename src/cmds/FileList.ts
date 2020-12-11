@@ -5,7 +5,7 @@
 import { window, commands, } from "vscode";
 
 const disposableFileList = commands.registerCommand(
-  "extension.filelist",
+  "loveme.filelist",
   () => {
     let editor = window.activeTextEditor;
     if (!editor || !editor.viewColumn) {

@@ -5,7 +5,7 @@
 import { window, commands, } from "vscode";
 
 const disposableBeautify = commands.registerCommand(
-  "extension.beautify",
+  "loveme.beautify",
   () => {
     let editor = window.activeTextEditor;
     if (!editor) {

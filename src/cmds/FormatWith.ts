@@ -5,7 +5,7 @@
 import { window, commands, } from "vscode";
 
 const  disposableFormatWith = commands.registerCommand(
-  "extension.formatWith",
+  "loveme.formatWith",
   () => {
     let editor = window.activeTextEditor;
     if (!editor) {

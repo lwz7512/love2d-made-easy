@@ -14,7 +14,7 @@ import { window, commands, workspace, Uri, } from "vscode";
 
 
 // ====== main.lua generator @2020/12/10 ======
-export const createMainLua = commands.registerCommand("love2d-made-easy.mainlua", () => {
+export const createMainLua = commands.registerCommand("loveme.mainlua", () => {
   window.showInformationMessage('love2d main.lua created!');
   
   let mainUri = Uri.file(path.join(__dirname, '../../templates/main.lua'));
@@ -38,7 +38,7 @@ export const createMainLua = commands.registerCommand("love2d-made-easy.mainlua"
 });
 
 // ====== Default love2d command ======
-const disposableLove2d = commands.registerCommand("love2d-made-easy.love2d", () => {
+const disposableLove2d = commands.registerCommand("loveme.love2d", () => {
   
   let editor = window.activeTextEditor;
   if (!editor) return window.showWarningMessage('No editor open!');
