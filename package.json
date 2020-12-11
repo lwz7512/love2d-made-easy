@@ -34,6 +34,7 @@
     "button"
   ],
 	"activationEvents": [
+    "onLanguage:lua",
     "onCommand:extension.back",
     "onCommand:extension.forward",
     "onCommand:extension.switch",
@@ -59,10 +60,10 @@
     "onCommand:extension.compareWithSaved",
     "onCommand:extension.showCommands",
     "onCommand:extension.startDebug",
-		"onCommand:love2d-made-easy.love2d",
-		"onLanguage:lua",
     "onCommand:LOVE.launch",
-    "onCommand:LOVE.openDocumentation"
+    "onCommand:LOVE.openDocumentation",
+		"onCommand:love2d-made-easy.love2d",
+    "onCommand:love2d-made-easy.mainlua"
   ],
 	"contributes": {
 		"keybindings": [
@@ -439,21 +440,26 @@
         }
       },
       {
-        "command": "love2d-made-easy.love2d",
-        "title": "Love2d Run",
-        "category": "menubar",
-        "icon": {
-          "light": "images/love2d.png",
-          "dark": "images/love2d.png"
-        }
-			},
-			{
 				"command": "LOVE.openDocumentation",
 				"title": "Open LOVE 2D documentation"
 			},
 			{
 					"command": "LOVE.launch",
 					"title": "Launch LOVE 2D from the working directory"
+			},
+      {
+        "command": "love2d-made-easy.love2d",
+        "title": "Love2d Run",
+        "category": "love",
+        "icon": {
+          "light": "images/love2d.png",
+          "dark": "images/love2d.png"
+        }
+      },
+      {
+				"command": "love2d-made-easy.mainlua",
+        "title": "Create main.lua",
+        "category": "love"
 			}
 		],
 		"menus": {

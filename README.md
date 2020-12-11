@@ -9,15 +9,16 @@ To simplify the Love2d game development steps and tools involved for beginners, 
 - Click `Love2d Run` to start love2d game(main.lua required in project root folder)
 ![love2d button](./screenshots/love2dbtn.png)
 
-- 
+- Shift + cmd + p to open commands palette, then input `create main.lua` and press `Enter` key to generate `main.lua`
+![create main.lua](./screenshots/love2dmainlua.gif)
 
-...
+- more to coming...
 
 ## Features
 
 - [x] Launch button
 - [x] Love API autocompelte
-- [x] main.lua generator -- TODO: ...
+- [x] main.lua generator
 - [ ] Interactive project generator
 - [ ] Sprite/GameObject/Entity/State generator
 

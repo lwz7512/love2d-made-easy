@@ -7,18 +7,45 @@
  */
 
 var love_started = false;
-
+// import path = require('path');
+import * as path from 'path';
 import * as child from 'child_process';
-import { window, commands, workspace, } from "vscode";
+import { window, commands, workspace, Uri, } from "vscode";
 
-  // love2d command
+
+// ====== main.lua generator @2020/12/10 ======
+export const createMainLua = commands.registerCommand("love2d-made-easy.mainlua", () => {
+  window.showInformationMessage('love2d main.lua created!');
+  
+  let mainUri = Uri.file(path.join(__dirname, '../../templates/main.lua'));
+  let mainlua = workspace.fs.readFile(mainUri);
+  let rootPath = workspace.workspaceFolders![0].uri.fsPath;
+  let mainOut = Uri.file(path.join(rootPath, 'main.lua'));
+  mainlua.then(
+    content => {
+      // console.log(value.toString())
+      workspace.fs.writeFile(mainOut, content).then(
+        () => {
+          commands.executeCommand('vscode.open', mainOut);
+        }, 
+        failure => {
+          console.error('>>> open failed!');
+        }
+      )
+    }, 
+    reason => {console.error(reason)}
+  );
+});
+
+// ====== Default love2d command ======
 const disposableLove2d = commands.registerCommand("love2d-made-easy.love2d", () => {
   
   let editor = window.activeTextEditor;
-  if (!editor) return
+  if (!editor) return window.showWarningMessage('No editor open!');
   if (love_started) return
   
-  let projectRoot = workspace.rootPath;
+  // let projectRoot = workspace.rootPath; // @deprecated
+  let projectRoot = workspace.workspaceFolders![0].uri.fsPath;
   // console.log('>>> root: '+projectRoot)
   // love project runner
   let loveProjectHandler = (files: any[]) => {

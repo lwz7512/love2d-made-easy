@@ -19,7 +19,7 @@ import disposableBeautify from "../cmds/Beautify";
 import disposableFormatWith from "../cmds/FormatWith";
 import disposableFileList from "../cmds/FileList";
 import disposableSwitch from "../cmds/Switch";
-import disposableLove2d from "../cmds/Love2d";
+import disposableLove2d, { createMainLua } from "../cmds/Love2d";
 import commandArray from "../cmds/BuiltinCmds";
 
 
@@ -63,6 +63,7 @@ export const addCustomizeCmds = (context: ExtensionContext) => {
   context.subscriptions.push(disposableFormatWith);
   context.subscriptions.push(disposableSwitch(hasCpp));
   context.subscriptions.push(disposableLove2d);
+  context.subscriptions.push(createMainLua);
 }
 
 export const addAutoCompleteSignatureCmds = (context: ExtensionContext) => {
