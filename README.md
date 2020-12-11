@@ -50,13 +50,17 @@ Each of release list below and features included.
 
 Initial release of Love2d Made Easy(LoveME)
 
+- love2d game launch button
+- love2d code autocomplete
+- main.lua generator
+
 ### 1.0.1
 
-Fixed issue #.
+todo ...
 
 ### 1.1.0
 
-Added features X, Y, and Z.
+todo ...
 
 
 **Enjoy!**
