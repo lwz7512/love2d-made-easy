@@ -13,7 +13,7 @@ To simplify the Love2d game development steps and tools involved for beginners, 
 ![create main.lua](./screenshots/love2dmainlua.gif)
 
   - Shift + cmd + p to open commands palette
-  - hen input `create main.lua` and press `Enter` key
+  - then input `create main.lua` and press `Enter` key
 
 - More to coming...
 

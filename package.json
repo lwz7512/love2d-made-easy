@@ -3,10 +3,10 @@
 	"displayName": "Love2d Made Easy",
 	"description": "Love2d autocomplete and launch game button as well as some code generators",
   "version": "1.0.0",
-  "author": "lwz7512",
+  "publisher": "lwz7512",
   "icon": "images/love2deasy_128.png",
   "main": "./out/extension.js",
-	"license": "SEE license IN LICENSE file",
+	"license": "ISC",
   "homepage": "https://github.com/lwz7512/love2d-made-easy",
   "engines": {
     "vscode": "^1.51.0"
@@ -21,6 +21,10 @@
     "Visualization"
 	],
 	"keywords": [
+    "game",
+    "lua",
+    "code generator",
+    "love2d",
     "shortcut",
     "shortcuts",
     "menu",
