@@ -1,9 +1,12 @@
 # Change Log
 
-All notable changes to the "love2d-made-easy" extension will be documented in this file.
+The first successfull and workable release is lwz7512.love2d-made-easy@1.0.7, older vesion have bugs to launch commands.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
+
+
+
+## [1.0.7] - 2020-12-11
 
 - Initial release

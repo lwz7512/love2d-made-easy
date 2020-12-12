@@ -5,7 +5,7 @@
 
 import { ExtensionContext,  } from "vscode";
 import {
-  checkCpp, addBuiltinCmds, addCustomizeCmds,
+  checkCpp, addCustomizeCmds,
 } from "./common/CmdHandler"
 
 import {
@@ -18,9 +18,7 @@ import {
 export function activate(context: ExtensionContext) {
   // Step: If simple commands then add to this array
   checkCpp()
-  // Adding 2) to a list of disposables which are disposed when this extension is deactivated
-  addBuiltinCmds(context)
-  // Step: else add complex command separately
+  // add complex command separately
   addCustomizeCmds(context)
   
   // ADD autocomplete commands

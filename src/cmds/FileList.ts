@@ -9,7 +9,7 @@ const disposableFileList = commands.registerCommand(
   () => {
     let editor = window.activeTextEditor;
     if (!editor || !editor.viewColumn) {
-      return; // No open text editor
+      return window.showWarningMessage('No editor open!'); // No open text editor
     }
     commands
       .executeCommand("workbench.action.showAllEditorsByMostRecentlyUsed")

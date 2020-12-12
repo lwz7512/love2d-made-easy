@@ -9,7 +9,7 @@ const disposableBeautify = commands.registerCommand(
   () => {
     let editor = window.activeTextEditor;
     if (!editor) {
-      return; // No open text editor
+      return window.showWarningMessage('No editor open!'); // No open text editor
     }
 
     if (window.state.focused === true && !editor.selection.isEmpty) {

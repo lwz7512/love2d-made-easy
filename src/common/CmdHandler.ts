@@ -2,16 +2,18 @@
  * utility functions
  */
 
-import {
-  ExtensionContext, Disposable, commands,
-} from "vscode";
+import { ExtensionContext, commands, } from "vscode";
 
 import disposableBeautify from "../cmds/Beautify";
 import disposableFormatWith from "../cmds/FormatWith";
 import disposableFileList from "../cmds/FileList";
 import disposableSwitch from "../cmds/Switch";
 import disposableLove2d, { createMainLua } from "../cmds/Love2d";
-import commandArray from "../cmds/BuiltinCmds";
+import {
+  dispSave, disptoggleTerminal, disptoggleActivityBar, dispBack, dispForward, 
+  dispToggleWS, dispQuickOpen, dispFR, dispUd, dispRd, dispCL, dispSaveAll,
+  dispOF, dispNF, dispGTD, dispCut, dispCp, dispPst, dispCWSave, dispSC, dispSD,
+} from "../cmds/BuiltinCmds"
 
 
 var init = false;
@@ -28,26 +30,28 @@ export const checkCpp = () => {
   init = true;
 }
 
-export const addBuiltinCmds = (context: ExtensionContext) => {
-  let disposableCommandsArray: Disposable[] = [];
-  // The command has been defined in the package.json file
-  // Now provide the implementation of the command with  registerCommand
-  // The commandId parameter must match the command field in package.json
-  commandArray.forEach((command) => {
-    disposableCommandsArray.push(
-      commands.registerCommand(command[0], () => {
-        commands.executeCommand(command[1]).then(function () {});
-      })
-    );
-  });
-  // Adding 1) to a list of disposables which are disposed when this extension is deactivated
-
-  disposableCommandsArray.forEach((i) => {
-    context.subscriptions.push(i);
-  });
-}
-
 export const addCustomizeCmds = (context: ExtensionContext) => {
+  context.subscriptions.push(disptoggleActivityBar);
+  context.subscriptions.push(dispBack);
+  context.subscriptions.push(dispForward);
+  context.subscriptions.push(dispToggleWS);
+  context.subscriptions.push(dispQuickOpen);
+  context.subscriptions.push(dispFR);
+  context.subscriptions.push(dispSave);
+  context.subscriptions.push(disptoggleTerminal);
+  context.subscriptions.push(dispUd);
+  context.subscriptions.push(dispRd);
+  context.subscriptions.push(dispCL);
+  context.subscriptions.push(dispSaveAll);
+  context.subscriptions.push(dispOF);
+  context.subscriptions.push(dispNF);
+  context.subscriptions.push(dispGTD);
+  context.subscriptions.push(dispCut);
+  context.subscriptions.push(dispCp);
+  context.subscriptions.push(dispPst);
+  context.subscriptions.push(dispCWSave);
+  context.subscriptions.push(dispSC);
+  context.subscriptions.push(dispSD);
   context.subscriptions.push(disposableFileList);
   context.subscriptions.push(disposableBeautify);
   context.subscriptions.push(disposableFormatWith);
