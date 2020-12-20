@@ -28,7 +28,7 @@ export class LoveSignatureHelpProvider implements SignatureHelpProvider {
 
         // Find the name of the function that's being called
         let functionNameRange = this.previousTokenPosition(document, theCall.openParen);
-        let functionName = document.getText(functionNameRange?functionNameRange:undefined);
+        let functionName = document.getText(functionNameRange!);
 
         // Find the full method call
         let currentLine = document.lineAt(position.line).text.substring(0, position.character);

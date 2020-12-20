@@ -2,7 +2,7 @@
   "name": "love2d-made-easy",
 	"displayName": "Love2d Made Easy",
 	"description": "Love2d autocomplete and launch game button as well as some code generators",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "publisher": "lwz7512",
   "icon": "images/love2deasy_128.png",
   "main": "./out/extension.js",
@@ -38,6 +38,7 @@
     "button"
   ],
 	"activationEvents": [
+    "*",
     "onLanguage:lua",
     "onCommand:loveme.back",
     "onCommand:loveme.forward",
