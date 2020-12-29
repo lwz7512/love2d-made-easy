@@ -6,21 +6,23 @@ To simplify the Love2d game development steps and tools involved for beginners, 
 
 ## Screenshots & Demos
 
-- Click `Love2d Run` to start love2d game(main.lua required in project root folder)
+- Click `Love2d Run` to start love2d game(main.lua required in project root folder).
+
 ![love2d button](./screenshots/love2dbtn.png)
 
-- Use command to generate `main.lua`
-![create main.lua](./screenshots/love2dmainlua.gif)
-
+- Use command to generate `main.lua`.
   - Shift + cmd + p to open commands palette
   - then input `create main.lua` and press `Enter` key
+
+![create main.lua](./screenshots/love2dmainlua.gif)
+
 
 - More to coming...
 
 ## Features
 
-- [x] Launch button
-- [x] Love API autocompelte
+- [x] love2d game Launch button
+- [x] Love API autocomplete
 - [x] main.lua generator
 - [ ] Interactive project generator
 - [ ] Sprite/GameObject/Entity/State generator
@@ -54,13 +56,19 @@ Initial release of Love2d Made Easy(LoveME)
 - love2d code autocomplete
 - main.lua generator
 
-### 1.0.1
+### 1.0.8
 
-todo ...
+Stable version for love API autocomplete.
 
 ### 1.1.0
 
 todo ...
 
+
+## Sponsored by
+
+  <a href="https://godot-academy.netlify.app/" target="_blank" style="display:block;margin:20px;width:48px;height:48px">
+    <img src="images/ga.png"/>
+  </a>
 
 **Enjoy!**
