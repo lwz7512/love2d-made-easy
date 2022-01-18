@@ -67,7 +67,7 @@ If `process.platform` is `win32`, `"C:\\Program Files\\LOVE\\love.exe"` will bei
 
 If user selected the different location to install `love2D` other than default `"C:\\Program Files\\LOVE\\love.exe"`, it's ok, open `File/Preferences/Settings/Extensions/Love2d Made Easy`, scroll down to the end of options and change the value of `Windows Love2d Path`:
 
-![love2d.exe windows path setting](./images/love2d_windows_path.png)
+![love2d.exe windows path setting](./screenshots/love2d_windows_path.png)
 
 @2022/01/17
 
