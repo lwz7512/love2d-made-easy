@@ -62,8 +62,14 @@ Stable version for love API autocomplete.
 
 ### 1.1.0
 
-todo ...
+Windows 10+ support after one year silence. when press love2d `heart` icon, it will check os type.
+If `process.platform` is `win32`, `"C:\\Program Files\\LOVE\\love.exe"` will being used to start a love2d program(main.lua). Otherwise, assume the platform is MacOSX for the time being(that means no linux support currently).
 
+If user selected the different location to install `love2D` other than default `"C:\\Program Files\\LOVE\\love.exe"`, it's ok, open `File/Preferences/Settings/Extensions/Love2d Made Easy`, scroll down to the end of options and change the value of `Windows Love2d Path`:
+
+![love2d.exe windows path setting](./images/love2d_windows_path.png)
+
+@2022/01/17
 
 ## Sponsored by
 

@@ -1,17 +1,17 @@
 {
   "name": "love2d-made-easy",
-	"displayName": "Love2d Made Easy",
-	"description": "Love2d autocomplete and launch game button as well as some code generators",
-  "version": "1.0.9",
+  "displayName": "Love2d Made Easy",
+  "description": "Love2d autocomplete and launch game button as well as some code generators",
+  "version": "1.10.0",
   "publisher": "lwz7512",
   "icon": "images/love2deasy_128.png",
   "main": "./out/extension.js",
-	"license": "ISC",
+  "license": "ISC",
   "homepage": "https://github.com/lwz7512/love2d-made-easy",
   "engines": {
     "vscode": "^1.51.0"
   },
-	"repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/lwz7512/love2d-made-easy.git"
   },
@@ -19,8 +19,8 @@
     "Programming Languages",
     "Other",
     "Visualization"
-	],
-	"keywords": [
+  ],
+  "keywords": [
     "game",
     "lua",
     "code generator",
@@ -37,8 +37,7 @@
     "shortcut menu bar",
     "button"
   ],
-	"activationEvents": [
-    "*",
+  "activationEvents": [
     "onLanguage:lua",
     "onCommand:loveme.back",
     "onCommand:loveme.forward",
@@ -67,24 +66,29 @@
     "onCommand:loveme.startDebug",
     "onCommand:loveme.launch",
     "onCommand:loveme.openDocumentation",
-		"onCommand:loveme.love2d",
+    "onCommand:loveme.love2d",
     "onCommand:loveme.mainlua"
   ],
-	"contributes": {
-		"keybindings": [
-				{
-						"command": "loveme.openDocumentation",
-						"key": "Ctrl+Alt+D"
-				},
-				{
-						"command": "loveme.launch",
-						"key": "Alt+L"
-				}
-		],
-		"configuration": [
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "loveme.openDocumentation",
+        "key": "Ctrl+Alt+D"
+      },
+      {
+        "command": "loveme.launch",
+        "key": "Alt+L"
+      }
+    ],
+    "configuration": [
       {
         "title": "Love2d Made Easy",
         "properties": {
+          "Windows Love2d Path": {
+            "type": "string",
+            "default": "C:\\Program Files\\LOVE\\love.exe",
+            "description": "Love2d exe file path in Windows"
+          },
           "Save active file": {
             "type": "boolean",
             "default": false,
@@ -445,15 +449,15 @@
         }
       },
       {
-				"command": "loveme.openDocumentation",
+        "command": "loveme.openDocumentation",
         "title": "Open LOVE 2D documentation",
         "category": "love"
-			},
-			{
-					"command": "loveme.launch",
-          "title": "Launch LOVE 2D from the working directory",
-          "category": "love"
-			},
+      },
+      {
+        "command": "loveme.launch",
+        "title": "Launch LOVE 2D from the working directory",
+        "category": "love"
+      },
       {
         "command": "loveme.love2d",
         "title": "Love2d Run",
@@ -464,12 +468,12 @@
         }
       },
       {
-				"command": "loveme.mainlua",
+        "command": "loveme.mainlua",
         "title": "Create main.lua",
         "category": "love"
-			}
-		],
-		"menus": {
+      }
+    ],
+    "menus": {
       "editor/title": [
         {
           "when": "config.Navigate back",
@@ -601,29 +605,29 @@
           "command": "loveme.love2d",
           "group": "navigation@26"
         }
-			]
-		}
-	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "yarn run compile && yarn run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.51.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.4",
-		"@types/node": "^12.11.7",
-		"eslint": "^7.15.0",
-		"@typescript-eslint/eslint-plugin": "^4.9.0",
-		"@typescript-eslint/parser": "^4.9.0",
-		"glob": "^7.1.6",
-		"mocha": "^8.1.3",
-		"typescript": "^4.1.2",
-		"vscode-test": "^1.4.1",
-		"openurl": "^1.1.1"
-	}
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.51.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "typescript": "^4.1.2",
+    "vscode-test": "^1.4.1",
+    "openurl": "^1.1.1"
+  }
 }

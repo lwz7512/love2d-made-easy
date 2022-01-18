@@ -24,7 +24,7 @@ const luaCompletionProvider = vscode.languages.registerCompletionItemProvider(
         // Check if we don't have any '.'s in the line and the letter starts with 'l'
         // If so, return love as a suggestions
         var count = (lineText.match(/\./g) || []).length;
-        if (count == 0 && currentWord == "l") {
+        if (count === 0 && currentWord === "l") {
             let suggestion: vscode.CompletionItem = new vscode.CompletionItem("love", vscode.CompletionItemKind.Module);
             suggestion.detail = EXT_TAG;
             suggestion.documentation = "LOVE 2D Game Framework";
@@ -38,7 +38,7 @@ const luaCompletionProvider = vscode.languages.registerCompletionItemProvider(
     }
   }, 
 	'.'
-)
+);
 
 const luaSignatureProvider = vscode.languages.registerSignatureHelpProvider(
 	LUA_MODE,
@@ -124,4 +124,4 @@ const provider2 = vscode.languages.registerCompletionItemProvider(
 			luaSignatureProvider, moonSignatureProvider,
 			luaCompletionProvider,
 		);
-	}
+	};
