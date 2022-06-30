@@ -89,6 +89,11 @@
             "default": "C:\\Program Files\\LOVE\\love.exe",
             "description": "Love2d exe file path in Windows"
           },
+          "Unix Love2d Path": {
+            "type": "string",
+            "default": "love",
+            "description": "Love2d exe file path in Unix"
+          },
           "Save active file": {
             "type": "boolean",
             "default": false,

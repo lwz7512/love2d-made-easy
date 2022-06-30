@@ -50,6 +50,7 @@ const disposableLove2d = commands.registerCommand("loveme.love2d", () => {
 
   let love2dConfig = workspace.getConfiguration();
   let windowsLove2dPath: string|undefined = love2dConfig.get('Windows Love2d Path');
+  let unixLove2dPath: string|undefined = love2dConfig.get('Unix Love2d Path');
   // console.warn('get windows love 2d path:' + windowsLove2dPath);
   
   // let projectRoot = workspace.rootPath; // @deprecated
@@ -66,7 +67,7 @@ const disposableLove2d = commands.registerCommand("loveme.love2d", () => {
     window.showInformationMessage('Running love2d game ... ');
     // check love2d ...
     let isWindows = process.platform === 'win32';
-    let love2dExePath = isWindows ? `"${windowsLove2dPath}"` : 'love';
+    let love2dExePath = isWindows ? `"${windowsLove2dPath}"` : `"${unixLove2dPath}"`;
     // let love2dExePath = isWindows ? '"C:\\Program Files\\LOVE\\love.exe"' : 'love';
     child.exec(`${love2dExePath} --version`, function(error, stdout: string, stderr: string){
       if (error) {
