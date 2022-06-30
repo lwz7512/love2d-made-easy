@@ -63,7 +63,10 @@ const disposableLove2d = commands.registerCommand("loveme.love2d", () => {
       return window.showErrorMessage(nomainlua);
     }
     
-    window.showInformationMessage('Running love2d game ... ');
+    // let the user know we are starting love2d
+    let statusBarMessage = 'Running love2d game...';
+    window.setStatusBarMessage(statusBarMessage);
+
     // check love2d ...
     let isWindows = process.platform === 'win32';
     let love2dExePath = isWindows ? `"${windowsLove2dPath}"` : 'love';
@@ -76,12 +79,19 @@ const disposableLove2d = commands.registerCommand("loveme.love2d", () => {
       }
       // LOVE 11.3 (Mysterious Mysteries) 
       console.log(stdout);
-      window.showInformationMessage(stdout);
+
+      // update the status bar with the love2d version information from stdout
+      window.setStatusBarMessage(`${statusBarMessage} ${stdout}`);
+
       // execute main.lua
-      child.exec(`${love2dExePath} ` + projectRoot);
+      child.exec(`${love2dExePath} ` + projectRoot).on("close", function(code: number, signal: NodeJS.Signals) {
+        // clear the status bar when the game is closed
+        window.setStatusBarMessage('');
+      });
     }).on("close", function(code, signal){
       // console.log('>>> love process closed!')
       loveStarted = false;
+
     }).on("error", function(code:any, signal:any){
       console.error('>>> love process error: '+code+'/'+signal);
     }).on("exit", function(code, signal){
