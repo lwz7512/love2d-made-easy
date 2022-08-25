@@ -2,7 +2,7 @@
 
 To simplify the Love2d game development steps and tools involved for beginners, `Love2d Made Easy` (abbr. LoveME) adds launch game button to the top menubar based on [Shortcut Menu Bar](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar). Meanwhile, love2d code [autocomplete](https://marketplace.visualstudio.com/items?itemName=bschulte.love) is also included in this plugin for the convienence of love code input. Last but not the least, couples of code generators and boilerplates offered in love commands to help getting started quickly.
 
-----
+---
 
 ## Screenshots & Demos
 
@@ -15,7 +15,6 @@ To simplify the Love2d game development steps and tools involved for beginners, 
   - then input `create main.lua` and press `Enter` key
 
 ![create main.lua](./screenshots/love2dmainlua.gif)
-
 
 - More to coming...
 
@@ -35,7 +34,7 @@ To simplify the Love2d game development steps and tools involved for beginners, 
 
 ## Extension Settings
 
-From menu: 
+From menu:
 
 - on Mac, Code/Preferences/Settings/User/Extensions/Love2d Made Easy, check/uncheck to enable/disables the buttons show up on the right top of vscode.
 - on Windows, ...
@@ -73,8 +72,8 @@ If user selected the different location to install `love2D` other than default `
 
 ## Sponsored by
 
-  <a href="https://godot-academy.netlify.app/" target="_blank" style="display:block;margin:20px;width:48px;height:48px">
-    <img src="images/ga.png"/>
+  <a href="https://letspy.today" target="_blank" style="display:block;margin:20px;width:72px;height:72px">
+    <img src="images/letspy_logo_120.png"/>
   </a>
 
 **Enjoy!**
