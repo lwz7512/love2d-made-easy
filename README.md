@@ -70,9 +70,15 @@ If user selected the different location to install `love2D` other than default `
 
 @2022/01/17
 
+### 1.10.2
+
+fix issue: [The run button is a grey square](https://github.com/lwz7512/love2d-made-easy/issues/10) by remove unnecessary commands
+
+@2023/10/12
+
 ## Sponsored by
 
-  <a href="https://letspy.today" target="_blank" style="display:block;margin:20px;width:72px;height:72px">
+  <a href="https://github.com/lwz7512" target="_blank" style="display:block;margin:20px;width:72px;height:72px">
     <img src="images/letspy_logo_120.png"/>
   </a>
 
