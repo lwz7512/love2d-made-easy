@@ -76,6 +76,15 @@ fix issue: [The run button is a grey square](https://github.com/lwz7512/love2d-m
 
 @2023/10/12
 
+### 1.10.3
+
+fix issue: [File paths with spaces not resolving](https://github.com/lwz7512/love2d-made-easy/issues/5)
+
+@2023/12/15
+
+
+
+
 ## Sponsored by
 
   <a href="https://github.com/lwz7512" target="_blank" style="display:block;margin:20px;width:72px;height:72px">

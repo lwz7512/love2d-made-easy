@@ -2,7 +2,7 @@
   "name": "love2d-made-easy",
   "displayName": "Love2d Made Easy",
   "description": "Love2d autocomplete and launch game button as well as some code generators",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "publisher": "lwz7512",
   "icon": "images/love2deasy_128.png",
   "main": "./out/extension.js",
@@ -190,7 +190,7 @@
             "default": false,
             "description": "show icon for 'Start debugging'"
           },
-          "Love2d Run": {
+          "Love2d_Run": {
             "type": "boolean",
             "default": true,
             "description": "show icon for 'Love2d Run'"
@@ -217,7 +217,7 @@
     "menus": {
       "editor/title": [
         {
-          "when": "config.Love2d Run",
+          "when": "config.Love2d_Run",
           "command": "loveme.love2d",
           "group": "navigation@26"
         }
